@@ -1,0 +1,71 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@layer base {
+    body {
+        font-family: 'Raleway', sans-serif;
+    }
+    li {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        cursor: pointer;
+    }
+}
+
+.banner {
+  background : url(../src/assets/img3.jpg) no-repeat right center;
+  background-size: cover;
+  
+
+}
+
+/* .banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+} */
+
+
+.about {
+    background : url(../src/assets/img8.jpg) no-repeat right center;
+    background-size: cover;   
+  
+  }
+.skills {
+    background : url(../src/assets/img9.jpg) no-repeat right center;
+    background-size: cover;   
+  
+  }
+.projects {
+    background : url(../src/assets/img10.jpg) no-repeat right center;
+    background-size: cover;   
+  
+  }
+.contact {
+    background : url(../src/assets/img11.jpg) no-repeat right center;
+    background-size: cover;   
+  
+  }
+
+
+  .content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+  }
+
+  .content-div:hover{
+    background-image: linear-gradient(
+        to right,
+        rgba(112, 188, 255, 0.7),
+        hsla( 190, 74%, 61%, 0.7)
+    ) !important;
+  }
