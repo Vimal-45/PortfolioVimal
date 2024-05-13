@@ -59,12 +59,32 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            <ul className={nav ? 'absolute top-20 md:top-24 left-0 w-full h-screen bg-[#08111e] flex flex-col justify-center items-center' : 'hidden'}>
-                <li className='py-6 text-1xl uppercase font-semibold'>Home</li>
-                <li className='py-6 text-1xl uppercase font-semibold'>About</li>
-                <li className='py-6 text-1xl uppercase font-semibold'>Skills</li>
-                <li className='py-6 text-1xl uppercase font-semibold'>Projects</li>
-                <li className='py-6 text-1xl uppercase font-semibold'>Contact</li>
+            <ul className={nav ? ' absolute top-20 md:top-24 left-0 w-full h-screen bg-[#08111e] flex flex-col justify-center items-center' : 'hidden'}>
+                <li className='py-6 text-1xl uppercase font-semibold'>
+                    <Link to='home' smooth={true} duration={500} onClick={() => { handleSetActiveComponent('home'); setNav(false); }}>
+                        Home
+                    </Link>
+                </li>
+                <li className='py-6 text-1xl uppercase font-semibold'>
+                    <Link to='about' smooth={true} duration={500} onClick={() => { handleSetActiveComponent('about'); setNav(false); }}>
+                        About
+                    </Link>
+                </li>
+                <li className='py-6 text-1xl uppercase font-semibold'>
+                    <Link to='skills' smooth={true} duration={500} onClick={() => { handleSetActiveComponent('skills'); setNav(false); }}>
+                        Skills
+                    </Link>
+                </li>
+                <li className='py-6 text-1xl uppercase font-semibold'>
+                    <Link to='projects' smooth={true} duration={500} onClick={() => { handleSetActiveComponent('projects'); setNav(false); }}>
+                        Projects
+                    </Link>
+                </li>
+                <li className='py-6 text-1xl uppercase font-semibold'>
+                    <Link to='contact' smooth={true} duration={500} onClick={() => { handleSetActiveComponent('contact'); setNav(false); }}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
             {/* Social Links */}
