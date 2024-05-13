@@ -42,7 +42,7 @@ const Home = () => {
               <HiArrowNarrowRight className="ml-3" />
             </span>
           </Link>
-          <button onClick={handleDownload} className="  bg-blue-500  animate-bounce text-white flex rounded-full border-2 px-6 py-3 my-2 group items-center hover:bg-blue-600 hover:border-teal-600">
+          <button onClick={handleDownload} className=" bg-blue-500 animate-bounce text-white flex rounded-full border-2 px-6 py-3 my-2 group items-center hover:bg-blue-600 hover:border-teal-600">
             Download CV{" "}
             <span className=" duration-300">
               <HiArrowNarrowDown className="ml-3" />
