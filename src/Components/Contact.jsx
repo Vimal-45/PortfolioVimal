@@ -25,14 +25,14 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className=" w-full h-screen contact flex justify-center items-center  px-4"
+      className=" w-full  h-auto contact flex justify-center items-center  px-4"
     >
       <form
         ref={form}
         onSubmit={sendEmail}
-        className=" flex flex-col mt-28 p-10 max-w-[600px] w-full"
+        className=" flex flex-col  p-10 max-w-[600px] w-full"
       >
-        <div className="pb-8">
+        <div className="pb-8 mt-14">
           <p className=" text-4xl font-bold inline border-b-4 border-teal-400  text-gray-300">
             Contact
           </p>
